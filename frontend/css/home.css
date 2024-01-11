@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    box-sizing: border-box ;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(#141e30, #243b55);
+    font-family: 'Poppins';
+ 
+}
+
+
+header{
+    width: 100vw;
+    height: 10vh;
+}
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+}
+.titulo{
+    color: #fff;
+}
+.add-usuario{
+    width: 12vw;
+    height: 5vh;
+    background-color: rgb(219, 219, 219);
+    color: green;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+    border: 1px solid black;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.add-usuario:hover{
+    transform: scale(1.1);
+}
+
+.container-usuarios{
+    width: 50vw;
+    height: 63vh;
+    background: rgba(0,0,0,.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    border: 1px solid black;
+    gap: 7px;
+    overflow-y: scroll;
+    border-radius: 10px;
+
+}
+
+
+
+.nome-usuario{
+    width: 10vw;
+}
+.status-usuario-ativo{
+    color: #26d62f;
+    font-weight: 650;
+}
+
+.status-usuario-desativado{
+    color: #cc1717;
+    font-weight: 650;
+}
+
+.card-usuario{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    align-items: center;
+    place-items: center;
+    width: 40vw;
+    height: 7vh;
+    background-color: rgba(255, 255, 255, 0.863);
+    border: 1px solid black;
+}
+
+.fa-pen-to-square{
+    color: rgb(196, 147, 42);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.fa-pen-to-square:hover{
+    transform: scale(1.2);
+    color: rgb(240, 175, 34);
+}
+
+.fa-trash{
+    color: rgb(236, 45, 45);
+}
+
+form{
+    width: 100%;
+    max-width: 350px;
+}
+.container-checkbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2%;
+}
+
+div.input-form{
+    width: 100%;
+    margin: 30px 0;
+    position: relative;
+}
+
+div.input-form label{
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    color: rgb(150, 150, 150);
+    cursor: text;
+    transition: 0.5s ease-in-out;
+}
+
+div.input-form .input{
+    width: 100%;
+    padding: 5px;
+    color: rgb(150, 150, 150);
+    border: 0;
+    border-bottom: 2px solid rgb(200, 200, 200);
+    outline: 0;
+    font-size: 16px ;
+}
+
+div.input-form .input:focus,
+div.input-form .input:valid{
+    border-bottom: 2px solid cornflowerblue;
+}
+
+div.input-form .input:focus ~ label,
+div.input-form .input:valid ~ label{
+    transform: translateY(-24px);
+    font-size: 12px;
+    color: cornflowerblue;
+}
+
+

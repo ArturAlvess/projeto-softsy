@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+html {
+    height: 100%;
+  }
+  body {
+    margin:0;
+    padding:0;
+    font-family: 'Poppins';
+    background: linear-gradient(#141e30, #243b55);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  form{
+    width: 20vw;
+  }
+  .softsy-titulo{
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .container-login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 480px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  
+  .container-login h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .container-login .input-box {
+    position: relative;
+  }
+  
+  .container-login .input-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .container-login .input-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .container-login .input-box input:focus ~ label,
+  .container-login .input-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+  }
+  
+  .container-login form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #141e30;
+    color: #fff !important;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    border: 1px solid #fff;
+    
+  }
+  
+  .container-login a:hover {
+    background: #03e9f4;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .container-login a span {
+    position: absolute;
+    display: block;
+  }
+
+  .esqueci-a-senha{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: 0.5s;
+  }
+  .esqueci-a-senha:hover{
+    color: #03e9f4;
+    cursor: pointer;
+  }
+  
+
+  div.input-form{
+    width: 100%;
+    margin: 30px 0;
+    position: relative;
+}
+
+div.input-form label{
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    color: rgb(150, 150, 150);
+    cursor: text;
+    transition: 0.5s ease-in-out;
+}
+
+div.input-form .input{
+    width: 100%;
+    padding: 5px;
+    color: rgb(150, 150, 150);
+    border: 0;
+    border-bottom: 2px solid rgb(200, 200, 200);
+    outline: 0;
+    font-size: 16px ;
+}
+
+div.input-form .input:focus,
+div.input-form .input:valid{
+    border-bottom: 2px solid cornflowerblue;
+}
+
+div.input-form .input:focus ~ label,
+div.input-form .input:valid ~ label{
+    transform: translateY(-24px);
+    font-size: 12px;
+    color: cornflowerblue;
+}
+
+
+  
