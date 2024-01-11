@@ -1,6 +1,6 @@
 # Softsy - 
 
-<img src="../frontend/img/tela_projeto.png">
+![](./frontend/img/tela_projeto.png)
 
 ---
 
